@@ -59,7 +59,7 @@ export function PricingCard({
           onClick={onSelectPlan}
           className="glass-button w-full rounded-lg px-4 py-4 text-center text-lg font-semibold text-white transition-all hover:shadow-lg hover:shadow-[#740000]/25"
         >
-          Get Lifetime Access (5$)
+          Get Lifetime Access (10$)
         </button>
       </div>
     </div>
