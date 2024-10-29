@@ -40,7 +40,7 @@ export function Gallery() {
             key={index}
             className="group relative overflow-hidden rounded-2xl glass-card"
           >
-            <div className="aspect-w-16 aspect-h-9 overflow-hidden">
+            <div className="aspect-w-5 aspect-h-5 overflow-hidden">
               <img
                 src={image.url}
                 alt={image.title}
