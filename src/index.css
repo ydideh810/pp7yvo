@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased bg-gray-900 font-tektur text-gray-100;
+  }
+}
+
+.glass-effect {
+  @apply bg-opacity-10 backdrop-blur-lg backdrop-filter;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-card {
+  @apply glass-effect;
+  background: linear-gradient(
+    135deg,
+    rgba(116, 0, 0, 0.1) 0%,
+    rgba(116, 0, 0, 0.05) 100%
+  );
+}
+
+.glass-button {
+  @apply relative overflow-hidden;
+  background: linear-gradient(
+    135deg,
+    rgba(116, 0, 0, 0.2) 0%,
+    rgba(116, 0, 0, 0.1) 100%
+  );
+}
+
+.glass-button::before {
+  content: '';
+  @apply absolute inset-0 opacity-0 transition-opacity;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.747) 100%
+  );
+}
+
+.glass-button:hover::before {
+  @apply opacity-100;
+}
+
+.neon-border {
+  @apply relative rounded-2xl;
+}
+
+.neon-border::before {
+  content: '';
+  @apply absolute -inset-[1px] rounded-2xl bg-gradient-to-r from-[#740000] to-[#740000];
+  z-index: -1;
+}
