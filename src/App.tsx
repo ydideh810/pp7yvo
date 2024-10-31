@@ -18,7 +18,7 @@ const plan = {
 
 function App() {
   const handlePlanSelection = () => {
-    window.location.href = 'https://buy.stripe.com/8wM6q30FW95ve64004';
+    window.location.href = 'https://buy.stripe.com/6oE7u71K0bdD7HG005';
   };
 
   return (
